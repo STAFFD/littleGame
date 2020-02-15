@@ -6,8 +6,10 @@ public class progressCheck : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other) {
         if (other.name == "Player") {
-            if (isEnd) Debug.Log("END");
-            else FindObjectOfType<cubeMovement>().forwardForce *= 1.2f;
+            if (isEnd) {
+                Debug.Log("END");
+                FindObjectOfType<GameManager>().LevelComplete();
+            } else FindObjectOfType<cubeMovement>().forwardForce *= 1.2f;
         }
     }
 }
