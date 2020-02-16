@@ -1,4 +1,5 @@
 ﻿using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
@@ -8,6 +9,14 @@ public class GameManager : MonoBehaviour {
     public float restartDelay = 2f;
 
     public GameObject completeLevelUI;
+
+    public Button button;
+
+    private void Start() {
+        button.onClick.AddListener(delegate {
+            ExitGame();
+        });
+    }
 
     public void LevelComplete() {
         completeLevelUI.SetActive(true);
@@ -25,7 +34,7 @@ public class GameManager : MonoBehaviour {
         SceneManager.LoadScene("level1");
     }
 
-    void exitGame() {
+    public void ExitGame() {
         Application.Quit();
     }
 }
