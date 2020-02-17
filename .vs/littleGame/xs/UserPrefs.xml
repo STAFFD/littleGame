@@ -5,7 +5,7 @@
       <File FileName="Assets/Scripts/collision.cs" />
       <File FileName="Assets/Scripts/obstacleControl.cs" />
       <File FileName="Assets/Scripts/score.cs" />
-      <File FileName="Assets/Scripts/GameManager.cs" Line="11" Column="39" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="38" Column="1" />
       <File FileName="Assets/Scripts/cubeMovement.cs" Line="32" Column="1" />
       <File FileName="Assets/Scripts/followPlayer.cs" />
     </Files>
